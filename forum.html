@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forum</title>
+	<link rel="icon" type="text/css" href="tlogo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<nav class="nav">
+	<div id="hamburger">
+
+		<input type="checkbox"/>
+		<!--This act as the hamburger line  -->
+		<span></span>
+		<span></span>
+		<span></span>
+
+		<ul class="menu">
+			<a href="index.html"><li>Home</li></a>
+			<a href="article.html"><li>Article</li></a>
+			<a href="#"><li>Sign Up</li></a>
+			<a href="about.html"><li>About</li></a>
+		</ul>
+	</div>
+	</nav>
+
+	<div class="main-heading">
+		<p class="font-monster">Be the first</p>
+		<p class="font-monster">to know</p>
+		<p class="font-monster">Sign Up</p>
+		<p class="font-monster">Below</p>	
+	</div>
+
+	
+
+	<div class="forumdiv">
+		<form method="POST" action="thank.html">
+
+			<div  class="personalform">
+			<fieldset class="form1">
+			<legend class="formtitle">Personal Info</legend>
+
+			<div>
+				<label class="labeling"><span class="popup" onmouseover="myPopFunction()"><span class="redstar">*</span>-required
+				<span class="poptext" id="myPopup">Please fill up those with <span class="redstar">*</span> !!</span>
+				</span></label>
+			</div>
+
+			<div>
+				<label class="labeling">First Name <span class="redstar" >*</span>:</label>
+				</label>
+				<input type="text" name="fname" class="inputx" required>
+			</div>
+
+			<div>
+				<label class="labeling">Last Name <span class="redstar">*</span>:</label>
+				<input type="text" name="lname" class="inputx" required>
+			</div>
+
+			<div>
+				<label class="labeling">I/C Passport <span class="redstar">*</span>:</label>
+				<input type="text" name="icpass" class="inputx" required>
+			</div>
+
+			<div>
+				<label class="labeling">Gender <span class="redstar">*</span>:</label>
+				<input type="radio" name="gender"><span class="font-size1">Male</span>
+				<input type="radio" name="gender"><span class="font-size1">Female</span>
+			</div>
+
+			<div>
+				<label class="labeling">Date of Birth <span class="redstar">*</span>:</label>
+				<input type="date" name="date" class="inputx" required>
+			</div>
+
+			<div>
+				<label class="labeling">Country Region <span class="redstar">*</span>:</label>
+				<select class="countrylist">
+					<option value="Asia">Asia</option>
+					<option value="Africa">Africa</option>
+					<option value="Europe">Europe</option>
+					<option value="NA">North America</option>
+					<option value="SA">South America</option>
+					<option value="Australia">Australia</option>
+				</select>
+			</div>
+
+			</fieldset>
+			</div>
+
+			<div class="newsletterform">
+				<fieldset>
+					<legend class="formtitle">Subcribe to Our Newsletter</legend>
+
+			<div>
+				<label class="labeling">Email :</label>
+				<input type="email" name="email" class="inputx" placeholder="Email goes here">
+			</div>
+
+			<div>
+				<label class="labeling">Will you recommend it to a friend ?</label>
+				<input type="radio" name="yn"><span class="font-size1">Yes</span>
+				<input type="radio" name="yn"><span class="font-size1">No</span>
+			</div>
+			</fieldset>
+
+			<fieldset>
+				<legend class="formtitle">Donations</legend>
+				<div>
+				<label class="labeling">Payment Method :</label>
+				<input type="radio" name="pay"><i class="fa fa-cc-mastercard"></i>
+				<input type="radio" name="pay"><i class="fa fa-cc-amex"></i>
+				<input type="radio" name="pay"><i class="fa fa-cc-visa"></i>
+				</div>
+
+				<div>
+					<label class="labeling">Credit Card Number :</label>
+					<input class="inputCard" type="text" name="creditCard1" id="creditCard"/>-
+					<input class="inputCard" type="text" name="creditCard2" id="creditCard"/>-
+					<input class="inputCard" type="text" name="creditCard3" id="creditCard"/>-
+					<input class="inputCard" type="text" name="creditCard4" id="creditCard"/>
+					<br />
+				</div>
+
+				<div>
+					<label class="labeling">Card Expiration :</label>
+				<select name='expireMM' id='expireMM'>
+				    <option value=''>Month</option>
+				    <option value='01'>January</option>
+				    <option value='02'>February</option>
+				    <option value='03'>March</option>
+				    <option value='04'>April</option>
+				    <option value='05'>May</option>
+				    <option value='06'>June</option>
+				    <option value='07'>July</option>
+				    <option value='08'>August</option>
+				    <option value='09'>September</option>
+				    <option value='10'>October</option>
+				    <option value='11'>November</option>
+				    <option value='12'>December</option>
+				</select>
+
+				<select name='expireYY' id='expireYY'>
+				    <option value=''>Year</option>
+				    <option value='20'>2020</option>
+				    <option value='21'>2021</option>
+				    <option value='22'>2022</option>
+				</select>  
+				</div>
+
+				<div>
+					<label class="labeling">Amount of Donations :</label>
+					<input type="Number" name="Donations" placeholder="$$$$">
+				</div>
+			</fieldset>
+			</div>
+
+			<div class="buttondiv">
+				<button class="button button1">Submit</button>
+			</div>
+
+		</form>
+	</div>
+
+<div class="footer">
+
+	<div class="footerleft">
+	<p><span class="font-size1 font-monster">&copy; By Leo Ming Wu</span></p>
+	<p><span class="font-size1 font-monster">Follow Us</span></p>
+	<p>
+		<a target="blank" href="https://www.facebook.com"><i class="fa fa-facebook-square" id="fa-white"></i></a>
+		<a target="blank" href="https://www.twitter.com"><i class="fa fa-twitter" id="fa-white"></i></a>
+		<a target="blank" href="https://www.instagram.com"><i class="fa fa-instagram" id="fa-white"></i></a>
+	</p>	
+	</div>
+
+	<div class="footermid">
+		<div>
+		<label class="labeling">Subcribe to our Newsletter :</label><br>
+		<input type="email" name="email" placeholder="Enter your email :)">
+		<a href="thank.html" class="button button2" style="font-size: 20px;">Go!</a><br>
+		</div>
+
+		<div class="navbutton">
+		<button class="button button2"><a href="index.html" style="font-size: 30px;">Home</a></button>
+		<button class="button button2"><a href="article.html" style="font-size: 30px;">Article</a></button>
+		<button class="button button2"><a href="#" style="font-size: 30px;">Sign Up</a></button>
+		<button class="button button2"><a href="about.html" style="font-size: 30px;">About</a></button>
+		</div>
+
+	</div>
+
+	<div class="search-container">
+		    <form>
+		      <input type="text" placeholder="Search.." name="search">
+		      <button type="submit" id="searchbutton" class="button button2"><i class="fa fa-search" id="fa-search"></i></button>
+		    </form>
+		    <img src="tlogo.png" width="150px" height="150px" style="padding-top: 30px; user-select: none;">
+		</div>
+
+</div>
+
+</body>
+</html>
