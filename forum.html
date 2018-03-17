@@ -52,28 +52,28 @@
 			<div>
 				<label class="labeling">First Name <span class="redstar" >*</span>:</label>
 				</label>
-				<input type="text" name="fname" class="inputx" required>
+				<input type="text" name="fname" class="inputx" required value="firstname">
 			</div>
 
 			<div>
 				<label class="labeling">Last Name <span class="redstar">*</span>:</label>
-				<input type="text" name="lname" class="inputx" required>
+				<input type="text" name="lname" class="inputx" required value="lastname">
 			</div>
 
 			<div>
 				<label class="labeling">I/C Passport <span class="redstar">*</span>:</label>
-				<input type="text" name="icpass" class="inputx" required>
+				<input type="text" name="icpass" class="inputx" required value="icpass">
 			</div>
 
 			<div>
 				<label class="labeling">Gender <span class="redstar">*</span>:</label>
-				<input type="radio" name="gender"><span class="font-size1">Male</span>
-				<input type="radio" name="gender"><span class="font-size1">Female</span>
+				<input type="radio" name="gender" value="Male"><span class="font-size1">Male</span>
+				<input type="radio" name="gender" value="Female"><span class="font-size1">Female</span>
 			</div>
 
 			<div>
 				<label class="labeling">Date of Birth <span class="redstar">*</span>:</label>
-				<input type="date" name="date" class="inputx" required>
+				<input type="date" name="date" class="inputx" required value="dob">
 			</div>
 
 			<div>
@@ -97,13 +97,13 @@
 
 			<div>
 				<label class="labeling">Email :</label>
-				<input type="email" name="email" class="inputx" placeholder="Email goes here">
+				<input type="email" name="email" class="inputx" placeholder="Email goes here" value="email">
 			</div>
 
 			<div>
 				<label class="labeling">Will you recommend it to a friend ?</label>
-				<input type="radio" name="yn"><span class="font-size1">Yes</span>
-				<input type="radio" name="yn"><span class="font-size1">No</span>
+				<input type="radio" name="yn" value="Yes"><span class="font-size1">Yes</span>
+				<input type="radio" name="yn" value="No"><span class="font-size1">No</span>
 			</div>
 			</fieldset>
 
@@ -111,17 +111,17 @@
 				<legend class="formtitle">Donations</legend>
 				<div>
 				<label class="labeling">Payment Method :</label>
-				<input type="radio" name="pay"><i class="fa fa-cc-mastercard"></i>
-				<input type="radio" name="pay"><i class="fa fa-cc-amex"></i>
-				<input type="radio" name="pay"><i class="fa fa-cc-visa"></i>
+				<input type="radio" name="pay" value="master"><i class="fa fa-cc-mastercard"></i>
+				<input type="radio" name="pay" value="amex"><i class="fa fa-cc-amex"></i>
+				<input type="radio" name="pay" value="visa"><i class="fa fa-cc-visa"></i>
 				</div>
 
 				<div>
 					<label class="labeling">Credit Card Number :</label>
-					<input class="inputCard" type="text" name="creditCard1" id="creditCard"/>-
-					<input class="inputCard" type="text" name="creditCard2" id="creditCard"/>-
-					<input class="inputCard" type="text" name="creditCard3" id="creditCard"/>-
-					<input class="inputCard" type="text" name="creditCard4" id="creditCard"/>
+					<input class="inputCard" type="text" name="creditCard1" id="creditCard" value="creditcardnum1" />-
+					<input class="inputCard" type="text" name="creditCard2" id="creditCard" value="creditcardnum2"/>-
+					<input class="inputCard" type="text" name="creditCard3" id="creditCard" value="creditcardnum3"/>-
+					<input class="inputCard" type="text" name="creditCard4" id="creditCard" value="creditcardnum4"/>
 					<br />
 				</div>
 
@@ -153,7 +153,7 @@
 
 				<div>
 					<label class="labeling">Amount of Donations :</label>
-					<input type="Number" name="Donations" placeholder="$$$$">
+					<input type="Number" name="Donations" placeholder="$$$$" value="Donations">
 				</div>
 			</fieldset>
 			</div>
