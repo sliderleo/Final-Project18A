@@ -37,7 +37,7 @@
 	
 
 	<div class="forumdiv">
-		<form method="POST" action="thank.html">
+		<form method="POST" action="thank.html" autocomplete="on">
 
 			<div  class="personalform">
 			<fieldset class="form1">
@@ -52,17 +52,17 @@
 			<div>
 				<label class="labeling">First Name <span class="redstar" >*</span>:</label>
 				</label>
-				<input type="text" name="fname" class="inputx" required value="firstname">
+				<input type="text" name="fname" class="inputx" required value="First Name">
 			</div>
 
 			<div>
 				<label class="labeling">Last Name <span class="redstar">*</span>:</label>
-				<input type="text" name="lname" class="inputx" required value="lastname">
+				<input type="text" name="lname" class="inputx" required value="Last Name">
 			</div>
 
 			<div>
 				<label class="labeling">I/C Passport <span class="redstar">*</span>:</label>
-				<input type="text" name="icpass" class="inputx" required value="icpass">
+				<input type="text" name="icpass" class="inputx" required value="Ic Pass">
 			</div>
 
 			<div>
@@ -97,7 +97,7 @@
 
 			<div>
 				<label class="labeling">Email :</label>
-				<input type="email" name="email" class="inputx" placeholder="Email goes here" value="email">
+				<input type="email" name="email" class="inputx" placeholder="Email goes here" value="Email">
 			</div>
 
 			<div>
@@ -118,10 +118,10 @@
 
 				<div>
 					<label class="labeling">Credit Card Number :</label>
-					<input class="inputCard" type="text" name="creditCard1" id="creditCard" value="creditcardnum1" />-
-					<input class="inputCard" type="text" name="creditCard2" id="creditCard" value="creditcardnum2"/>-
-					<input class="inputCard" type="text" name="creditCard3" id="creditCard" value="creditcardnum3"/>-
-					<input class="inputCard" type="text" name="creditCard4" id="creditCard" value="creditcardnum4"/>
+					<input class="inputCard" type="text" autocomplete="off" name="creditCard1" id="creditCard" value="" maxlength="4"/>-
+					<input class="inputCard" type="text" autocomplete="off" name="creditCard2" id="creditCard" value="" maxlength="4"/>-
+					<input class="inputCard" type="text" autocomplete="off" name="creditCard3" id="creditCard" value="" maxlength="4"/>-
+					<input class="inputCard" type="text" autocomplete="off" name="creditCard4" id="creditCard" value="" maxlength="4"/>
 					<br />
 				</div>
 
@@ -180,7 +180,7 @@
 	<div class="footermid">
 		<div>
 		<label class="labeling">Subcribe to our Newsletter :</label><br>
-		<input type="email" name="email" placeholder="Enter your email :)">
+		<input type="email" name="email" value="Email">
 		<a href="thank.html" class="button button2" style="font-size: 20px;">Go!</a><br>
 		</div>
 
