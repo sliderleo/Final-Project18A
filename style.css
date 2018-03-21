@@ -203,6 +203,26 @@ a{
 	height: 80px;
 	background-color: black;
 }
+.divider-slide{
+	width: 100%;
+	height: 200px;
+}
+@media (max-width: 800px) {
+	.divider-slide{
+		height: 50px;
+	}
+	.hero-con{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 1200px) {
+	.divider-slide{
+		height: 150px;
+	}
+	.hero-con{
+		margin-bottom: 60px;
+	}
+}
 .img1{
 	width: 100%;
 	height: 600px;
